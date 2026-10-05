@@ -351,10 +351,10 @@
       <div class="time">레포츠 </div><div>🏎️ <b>제주레포츠랜드 </b><small>카트, 짚라인</small></div>
     </div>
     <div class="sch" onclick="focusPlace('제주레포츠랜드')">
-      <div class="time">레포츠 </div><div>📸 <b>배경 좋은데서 단체사진 찍기</b><small>장소 미정</small></div>
+      <div class="time">명소 </div><div>📸 <b>배경 좋은데서 단체사진 찍기</b><small>장소 미정</small></div>
     </div>
-    <div class="sch" onclick="focusPlace('제주레포츠랜드')">
-      <div class="time">레포츠 </div><div>🍽️ <b>갈치 정식 먹기</b><small>식당 미정</small></div>
+    <div class="sch" onclick="focusPlace('충민정')">
+      <div class="time">갈치 정식 </div><div>🍽️ <b>충민정</b><small>식당 미정</small></div>
     </div>
   </section>
 </div>
@@ -364,7 +364,8 @@
 const places = [
   { name: "대구공항", addr: "대구광역시 동구 공항로 221", lat: 35.893889, lng: 128.658889, isOption: false },
   { name: "제주레포츠랜드", addr: "제주특별자치도 제주시 조천읍 와흘상서2길 47", lat: 33.5049, lng: 126.6385, isOption: false },
-  { name: "제주공항", addr: "제주특별자치도 제주시 공항로 2", lat: 33.511215, lng: 126.491202, isOption: false }
+  { name: "제주공항", addr: "제주특별자치도 제주시 공항로 2", lat: 33.511215, lng: 126.491202, isOption: false },
+{ name: "충민정", addr: "제주특별자치도 제주시 남성로 26-1", lat: 33.494752, lng: 126.517315, isOption: false }
 ];
 
 // 1. Initialize Leaflet Map
@@ -420,7 +421,7 @@ function showInfo(p) {
   `;
 }
 
-// Focus to specific place on map
+// Focus to specific place on map (숫자 14를 12로 변경)
 function focusPlace(name) {
   const p = places.find(item => item.name.includes(name) || name.includes(item.name));
   if (!p) return;
