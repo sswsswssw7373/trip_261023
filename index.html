@@ -289,7 +289,7 @@
     <div style="display:flex; align-items:center; gap:10px;">
       <div style="font-size:24px;">🏨</div>
       <div>
-        <div style="font-size:11.5px; color:#2563eb; font-weight:bold;">숙소 안내</div>
+        <div style="font-size:11.5px; color:#2563eb; font-weight:bold;">숙소</div>
         <div style="font-size:15px; font-weight:bold; color:#1e293b;">예약 아직 예약전</div>
         <div style="font-size:11px; color:#64748b; margin-top:2px;">숙소 주소</div>
       </div>
@@ -305,9 +305,9 @@
     <div style="display:flex; align-items:center; gap:10px;">
       <div style="font-size:24px;">🚗</div>
       <div>
-        <div style="font-size:12px; color:#16a34a; font-weight:bold;">렌트카 그렌저 GN7 (고급자차/휘발유/24년식)</div>
-        <div style="font-size:16px; font-weight:bold; color:#1e293b;">제주야 렌터카(064-731-1557), 166,200원</div>
-        <div style="font-size:11px; color:#64748b; margin-top:2px;">제주공항 1구역 8번셔틀버스 탑승</div>
+        <div style="font-size:12px; color:#16a34a; font-weight:bold;">렌트카</div>
+        <div style="font-size:16px; font-weight:bold; color:#1e293b;">그렌저 GN7 (고급자차/휘발유/24년식)</div>
+        <div style="font-size:11px; color:#64748b; margin-top:2px;">제주공항 1구역 8번 셔틀, 제주야렌트카, 166,200원</div>
       </div>
     </div>
     <div style="text-align:right; font-size:11px; color:#475569; font-weight:bold; background:#fff; padding:6px 10px; border-radius:8px; border:1px solid #cbd5e1;">
@@ -317,15 +317,13 @@
   </section>
 
   <!-- 🛫 출발 비행편 카드 -->
-  <section class="flight-info" onclick="focusPlaceByCoord(35.893889, 128.658889)" style="background:#f0f9ff; border:1.5px solid #0284c7; border-radius:12px; padding:12px; margin-bottom:14px; cursor:pointer; display:flex; align-items:center; justify-content:space-between; box-shadow:0 2px 6px rgba(2,132,199,0.15);">
+  <section class="flight-info" onclick="focusPlace('대구공항')" style="background:#f0f9ff; border:1.5px solid #0284c7; border-radius:12px; padding:12px; margin-bottom:14px; cursor:pointer; display:flex; align-items:center; justify-content:space-between; box-shadow:0 2px 6px rgba(2,132,199,0.15);">
     <div style="display:flex; align-items:center; gap:10px;">
-      <div class="sch" onclick="focusPlace('대구공항')">   
-        <div style="font-size:24px;">🛫</div>
-        <div>
-          <div style="font-size:12px; color:#0284c7; font-weight:bold;">출발 비행편 (대구 ➔ 제주)</div>
-          <div style="font-size:16px; font-weight:bold; color:#1e293b;">티웨이 TW811, 예약번호 : ML8V65</div>
-          <div style="font-size:11px; color:#64748b; margin-top:2px;">445,800원</div>
-        </div>
+      <div style="font-size:24px;">🛫</div>
+      <div>
+        <div style="font-size:12px; color:#0284c7; font-weight:bold;">출발 비행편 (대구 ➔ 제주)</div>
+        <div style="font-size:16px; font-weight:bold; color:#1e293b;">티웨이 TW811, 예약번호 : ML8V65</div>
+        <div style="font-size:11px; color:#64748b; margin-top:2px;">445,800원</div>
       </div>
     </div>
     <div style="text-align:right; font-size:11px; color:#475569; font-weight:bold; background:#fff; padding:6px 10px; border-radius:8px; border:1px solid #cbd5e1;">
@@ -335,15 +333,13 @@
   </section>
 
   <!-- 🛬 복귀 비행편 카드 -->
-  <section class="flight-info" onclick="focusPlaceByCoord(33.511215, 126.491202)" style="background:#fdf4ff; border:1.5px solid #c026d3; border-radius:12px; padding:12px; margin-bottom:14px; cursor:pointer; display:flex; align-items:center; justify-content:space-between; box-shadow:0 2px 6px rgba(192,38,211,0.15);">
+  <section class="flight-info" onclick="focusPlace('제주공항')" style="background:#fdf4ff; border:1.5px solid #c026d3; border-radius:12px; padding:12px; margin-bottom:14px; cursor:pointer; display:flex; align-items:center; justify-content:space-between; box-shadow:0 2px 6px rgba(192,38,211,0.15);">
     <div style="display:flex; align-items:center; gap:10px;">
-      <div class="sch" onclick="focusPlace('제주공항')">   
-        <div style="font-size:24px;">🛬</div>
-        <div>
-          <div style="font-size:12px; color:#c026d3; font-weight:bold;">복귀 비행편 (제주 ➔ 대구)</div>
-          <div style="font-size:16px; font-weight:bold; color:#1e293b;">진에어 LJ7590, 예약번호 : QH5B8Q</div>
-          <div style="font-size:11px; color:#64748b; margin-top:2px;">442,000원</div>
-        </div>
+      <div style="font-size:24px;">🛬</div>
+      <div>
+        <div style="font-size:12px; color:#c026d3; font-weight:bold;">복귀 비행편 (제주 ➔ 대구)</div>
+        <div style="font-size:16px; font-weight:bold; color:#1e293b;">진에어 LJ7590, 예약번호 : QH5B8Q</div>
+        <div style="font-size:11px; color:#64748b; margin-top:2px;">442,000원</div>
       </div>
     </div>
     <div style="text-align:right; font-size:11px; color:#475569; font-weight:bold; background:#fff; padding:6px 10px; border-radius:8px; border:1px solid #cbd5e1;">
@@ -356,7 +352,13 @@
   <section class="day d1">
     <h3>🔴 할꺼 </h3>
     <div class="sch" onclick="focusPlace('제주레포츠랜드')">
-      <div class="time">레포츠 </div><div>📍 <b>제주레포츠랜드 </b><small>카트, 짚라인</small></div>
+      <div class="time">레포츠 </div><div>🏎️ <b>제주레포츠랜드 </b><small>카트, 짚라인</small></div>
+    </div>
+    <div class="sch" onclick="focusPlace('제주레포츠랜드')">
+      <div class="time">레포츠 </div><div>📸 <b>배경 좋은데서 단체사진 찍기</b><small>장소 미정</small></div>
+    </div>
+    <div class="sch" onclick="focusPlace('제주레포츠랜드')">
+      <div class="time">레포츠 </div><div>🍽️ <b>갈치 정식 먹기</b><small>식당 미정</small></div>
     </div>
   </section>
 </div>
