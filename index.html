@@ -424,13 +424,13 @@ function showInfo(p) {
 function focusPlace(name) {
   const p = places.find(item => item.name.includes(name) || name.includes(item.name));
   if (!p) return;
-  map.flyTo([p.lat, p.lng], 14, { duration: 0.9 });
+  map.flyTo([p.lat, p.lng], 13, { duration: 0.9 });
   showInfo(p);
   document.getElementById('map').scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
 function focusPlaceByCoord(lat, lng) {
-  map.flyTo([lat, lng], 14, { duration: 0.9 });
+  map.flyTo([lat, lng], 13, { duration: 0.9 });
   document.getElementById('map').scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
